@@ -46,7 +46,7 @@ CineRAG/
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/CineRAG.git
+   git clone https://github.com/runciter2078/CineRAG.git
    cd CineRAG
    ```
 
