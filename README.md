@@ -21,10 +21,10 @@ This project is particularly suited for exploring how to combine vector search a
 
 ```
 CineRAG/
-├── cinerag.py              # Main Python script (converted from Jupyter notebook)
+├── cinerag.py              # Main Python script (converted from a Jupyter notebook)
 ├── README.md               # This file
-├── requirements.txt        # (Optional) List of Python dependencies
-├── wiki_movie_plots_deduped.csv  # CSV file with movie plot data (or instructions to obtain it)
+├── requirements.txt        # List of Python dependencies
+├── wiki_movie_plots_deduped.csv  # CSV file with movie plot data (see below for download instructions)
 └── huggingface_key.txt     # File containing your Hugging Face API token (do not share publicly)
 ```
 
@@ -33,7 +33,7 @@ CineRAG/
 ## Requirements
 
 - **Python:** 3.8 or above (Python 3.10+ recommended)
-- **Redis Stack:** Install and run [Redis Stack](https://redis.io/docs/stack/) (make sure `redis-stack-server` is running on localhost, port 6379)
+- **Redis Stack:** Install and run [Redis Stack](https://redis.io/docs/stack/get-started/install/) (make sure `redis-stack-server` is running on localhost, port 6379)
 - **Python Libraries:**  
   Install via pip:
   ```bash
@@ -54,11 +54,14 @@ CineRAG/
    - Create a file named `huggingface_key.txt` in the repository folder and paste your Hugging Face API token in it.
 
 3. **Obtain the Data:**
-   - Download the CSV file `wiki_movie_plots_deduped.csv` (if not provided) and place it in the repository folder.
-   - Alternatively, adjust the path in `cinerag.py` accordingly.
+   - Download the CSV file `wiki_movie_plots_deduped.csv` from one of the following sources:
+     - [Source 1](https://github.com/kiq005/movie-recommendation/blob/master/src/dataset/wiki_movie_plots_deduped.csv)
+     - [Source 2](https://github.com/giorgossideris/movie_plots_nlp/blob/main/data/wiki_movie_plots_deduped.csv)
+     - [Source 3](https://www.kaggle.com/datasets/jrobischon/wikipedia-movie-plots)
+   - Place the CSV file in the repository folder or adjust the path in `cinerag.py` accordingly.
 
 4. **Install Dependencies:**
-   - (Optional) Create a virtual environment and install the dependencies listed in `requirements.txt`:
+   - (Optional) Create a virtual environment and install the dependencies from `requirements.txt`:
      ```bash
      python -m venv venv
      source venv/bin/activate  # On Windows: venv\Scripts\activate
