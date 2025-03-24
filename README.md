@@ -23,7 +23,7 @@ This project is particularly suited for exploring how to combine vector search a
 
 ```
 CineRAG/
-├── cinerag.py              # Main Python script (converted from a Jupyter notebook)
+├── cinerag.py              # Main Python script
 ├── README.md               # This file
 ├── requirements.txt        # List of Python dependencies
 ├── wiki_movie_plots_deduped.csv  # CSV file with movie plot data (see below for download instructions)
